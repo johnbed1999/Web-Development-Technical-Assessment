@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <title>Micro Control Systems Demo Table</title>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+
+    <body>
+        <center>
+            <h2>Number of rows to be generated</h2>
+
+            <br>
+
+            <input type="number" id="table-row-num" value="20" max="112">
+            <button id="row-num-button">Submit</button>
+
+            <br>
+            <br>
+
+            <h2>How many rows are enabled?</h2>
+
+            <br>
+
+            <input type="number" id="enabled-rows" value="20">
+            <button id="enabled-row-button">Submit</button>
+        </center>
+        
+        <center>
+            <div id="table-gen">
+
+                <br>
+
+                <p><i>(Highlighted rows will be disabled)</i></p>
+
+                <br>
+
+                <table cellpadding="1" cellspacing="1" border="1" id="table-gen">
+                    <caption>Sensor Input Information Screen</caption>
+                    <thead id="headings">
+                        <tr>
+                            <th id="row-number">Point Number</th>
+                            <th>Name</th>
+                            <th>Display Type</th>
+                            <th>Offset</th>
+                            <th>Manual Value or NC/NO</th>
+                            <th>Display Text</th>
+                            <th>Temp. / GPM / CFM / Pwr Factor SI</th>
+                            <th>Humd./PSI/Temp. Diff./Enthal. Diff.</th>
+                            <th>Manual or Automatic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </center>
+        <script src="table.js"></script>
+    </body>
+</html>
